@@ -9,6 +9,7 @@ import BackgroundParticles from "./BackgroundParticles";
 import SocialIcons from "./SocialIcons";
 import AnimatedTextHover from "./AnimatedTextHover";
 import ThemeToggle from "./ThemeToggle";
+import GirlPlayer from "./GirlPlayer";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -94,6 +95,8 @@ export default function App() {
           >
             Crafting immersive, high-performance web experiences for the modern world.
           </motion.p>
+          
+          <GirlPlayer />
         </section>
 
         <section id="about" className="min-h-screen flex flex-col justify-center items-center px-6 text-center">
