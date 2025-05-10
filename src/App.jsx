@@ -40,7 +40,6 @@ export default function App() {
       <BackgroundParticles />
       <ThemeToggle />
 
-      {/* NAVBAR */}
       <div className="fixed top-0 left-0 w-full px-6 py-4 flex justify-between items-center z-50 bg-white/80 dark:bg-black/80 backdrop-blur border-b border-neutral-200 dark:border-neutral-800">
         <div className="text-xl font-bold tracking-wide">Nathan</div>
         <button
@@ -51,7 +50,6 @@ export default function App() {
         </button>
       </div>
 
-      {/* MENU FULLSCREEN */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -79,7 +77,6 @@ export default function App() {
       </AnimatePresence>
 
       <PageTransition>
-        {/* HERO SECTION */}
         <section id="home" className="h-screen flex flex-col justify-center items-center text-center px-6">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -99,7 +96,6 @@ export default function App() {
           </motion.p>
         </section>
 
-        {/* ABOUT SECTION */}
         <section id="about" className="min-h-screen flex flex-col justify-center items-center px-6 text-center">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -108,12 +104,11 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="text-4xl font-semibold mb-4"
           >
-            <RevealText text={"About Me
-I'm Nathan, a passionate front-end developer with a strong sense of design and interactivity. I specialize in building responsive and expressive user interfaces using React, Tailwind CSS, and animation tools. Every pixel matters."} />
+            <RevealText text={`About Me
+I'm Nathan, a passionate front-end developer with a strong sense of design and interactivity. I specialize in building responsive and expressive user interfaces using React, Tailwind CSS, and animation tools. Every pixel matters.`} />
           </motion.h2>
         </section>
 
-        {/* WORK SECTION */}
         <section id="work" className="min-h-screen flex flex-col justify-center items-center px-6">
           <h2 className="text-4xl font-semibold mb-8">Selected Work</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
@@ -140,7 +135,6 @@ I'm Nathan, a passionate front-end developer with a strong sense of design and i
           </div>
         </section>
 
-        {/* CONTACT SECTION */}
         <section id="contact" className="min-h-[60vh] flex flex-col justify-center items-center px-6 text-center">
           <h2 className="text-4xl font-semibold mb-6">Get in Touch</h2>
           <p className="text-lg text-neutral-600 dark:text-gray-400 mb-4 max-w-xl">
@@ -154,7 +148,6 @@ I'm Nathan, a passionate front-end developer with a strong sense of design and i
           </a>
         </section>
 
-        {/* FOOTER */}
         <footer className="text-center text-sm text-gray-600 dark:text-gray-500 py-8">
           © {new Date().getFullYear()} Nathan. Crafted with passion.
         </footer>
