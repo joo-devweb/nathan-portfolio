@@ -45,7 +45,7 @@ export default function GirlPlayer() {
           whileTap={{ scale: 0.95 }}
           className="bg-white dark:bg-black border border-gray-300 dark:border-gray-700 text-black dark:text-white px-6 py-3 rounded-full shadow-md hover:shadow-xl transition-all text-lg font-medium z-20"
         >
-          Pencet untuk melihat my girl, hehee
+          You can see my girl🤭
         </motion.button>
       )}
 
