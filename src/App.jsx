@@ -10,7 +10,7 @@ import SocialIcons from "./SocialIcons";
 import AnimatedTextHover from "./AnimatedTextHover";
 import ThemeToggle from "./ThemeToggle";
 
-export default import { useState } from "react";
+import { useState } from "react";
 import CinematicIntro from "./CinematicIntro";
 
 function App() {
