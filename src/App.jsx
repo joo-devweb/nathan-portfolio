@@ -9,9 +9,13 @@ import BackgroundParticles from "./BackgroundParticles";
 import SocialIcons from "./SocialIcons";
 import AnimatedTextHover from "./AnimatedTextHover";
 import ThemeToggle from "./ThemeToggle";
-import GirlPlayer from "./GirlPlayer";
 
-export default function App() {
+export default import { useState } from "react";
+import CinematicIntro from "./CinematicIntro";
+
+function App() {
+  const [introDone, setIntroDone] = useState(false);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -36,6 +40,10 @@ export default function App() {
   ];
 
   return (
+    <div className="bg-black text-white">
+      {!introDone && <CinematicIntro onFinish={() => setIntroDone(true)} />}
+      {introDone && (
+
     <div className="relative w-full min-h-screen bg-white text-black dark:bg-black dark:text-white font-sans overflow-x-hidden transition-colors duration-500">
       <CustomCursor />
       <BackgroundParticles />
@@ -95,8 +103,6 @@ export default function App() {
           >
             Crafting immersive, high-performance web experiences for the modern world.
           </motion.p>
-          
-          <GirlPlayer />
         </section>
 
         <section id="about" className="min-h-screen flex flex-col justify-center items-center px-6 text-center">
